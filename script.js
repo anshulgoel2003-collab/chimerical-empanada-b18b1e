@@ -24,12 +24,3 @@ if (reducedMotion) {
   }, { threshold: 0.14 });
   document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
 }
-
-const toast = document.querySelector('.toast');
-let toastTimer;
-document.querySelectorAll('.soon-trigger').forEach(button => button.addEventListener('click', () => {
-  toast.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove('show'), 5000);
-}));
-toast.querySelector('button').addEventListener('click', () => toast.classList.remove('show'));
