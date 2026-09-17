@@ -4,3 +4,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.needle{animation:none}}
 h1 em,h2 em,blockquote em{color:var(--coral);font-style:italic}
 .brand-mark svg{width:21px;height:21px}.brand-copy{display:flex;flex-direction:column;line-height:1}.brand-copy strong{font-size:20px}.brand-copy small{font-size:8px;letter-spacing:.11em;text-transform:uppercase;margin-top:5px;font-weight:500}.footer-brand-wrap>p{color:#aac0ba;font-size:13px;margin:16px 0 0}.footer-contact{display:flex;flex-direction:column;gap:6px;font-size:13px}.footer-contact strong{color:var(--lime);text-transform:uppercase;letter-spacing:.14em;font-size:10px;margin-bottom:4px}.footer-contact span{color:#93aaa4}.whatsapp-float{position:fixed;right:24px;bottom:24px;width:54px;height:54px;border-radius:50%;background:#25d366;color:#102e29;display:grid;place-items:center;z-index:20;box-shadow:0 12px 32px rgba(16,46,41,.28);transition:transform .2s}.whatsapp-float:hover{transform:translateY(-3px) scale(1.03)}.whatsapp-float svg{width:24px;height:24px}
+
+/* Keep service-card copy contained and wrapped cleanly at all viewport widths. */
+.service > div { min-width: 0; }
+.service p, .service li, .service h3 { overflow-wrap: break-word; word-wrap: break-word; }
+.service.feature > div:last-child { min-width: 0; max-width: 100%; }
