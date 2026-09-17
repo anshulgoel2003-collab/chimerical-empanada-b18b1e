@@ -9,3 +9,18 @@ h1 em,h2 em,blockquote em{color:var(--coral);font-style:italic}
 .service > div { min-width: 0; }
 .service p, .service li, .service h3 { overflow-wrap: break-word; word-wrap: break-word; }
 .service.feature > div:last-child { min-width: 0; max-width: 100%; }
+
+/* Psychometric feature card: the card has number, icon and content as three grid children.
+   Keep the number/icon on the first row and let the actual copy use the full card width. */
+.service.feature > div:nth-child(3) {
+  grid-column: 1 / -1;
+  min-width: 0;
+  width: 100%;
+}
+.service.feature > div:nth-child(3) h3,
+.service.feature > div:nth-child(3) p,
+.service.feature > div:nth-child(3) li {
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
