@@ -60,30 +60,3 @@ footer .footer-brand-wrap>p{
   margin:16px 0 0 !important;
   max-width:360px !important;
 }
-
-/* Eddice Student Dashboard hero */
-.dashboard-hero{display:flex;align-items:center;justify-content:center;padding:58px 4vw;isolation:isolate}
-.dashboard-hero .orbit{z-index:-1;opacity:.55}
-.dashboard-hero .compass-mini{width:132px;height:132px;left:auto;right:28px;top:26px;transform:none;opacity:.88}
-.dashboard-hero .compass-mini:before{height:118%;top:-9%}
-.dashboard-hero .compass-mini:after{width:118%;left:-9%}
-.dashboard-hero .compass-mini .needle{height:92px;width:6px}
-.dashboard-hero .compass-mini .north{top:6px;font-size:9px}
-.dashboard-card{width:min(560px,100%);position:relative;z-index:2;background:var(--paper);padding:34px 34px 30px;border-radius:3px;box-shadow:18px 18px 0 rgba(220,232,108,.95)}
-.dashboard-topline{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}
-.dashboard-kicker{text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:600;color:#5d716c}
-.free-badge{flex:none;background:var(--lime);color:var(--ink);padding:7px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.08em}
-.dashboard-card h2{font-size:clamp(38px,4.2vw,60px);margin:0 0 12px;color:var(--ink)}
-.dashboard-card h2 em{color:var(--coral);font-style:italic}
-.free-condition{margin:0 0 18px;padding:9px 11px;border-left:3px solid var(--coral);background:var(--cream);font-size:11px;line-height:1.45;color:#536862}
-.dashboard-intro{font-size:14px;line-height:1.55;color:#49665f;margin:0 0 21px;max-width:470px}
-.dashboard-features{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-bottom:24px}
-.dashboard-features>div{min-height:92px;padding:13px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:26px 1fr;align-content:start}
-.dashboard-features span{grid-row:1/3;font-size:9px;color:var(--coral);padding-top:2px}
-.dashboard-features strong{font-size:12px;line-height:1.25}
-.dashboard-features small{font-size:10px;line-height:1.35;color:#667b76;margin-top:4px}
-.dashboard-cta{display:flex;align-items:center;justify-content:space-between;background:var(--coral);color:white;padding:15px 17px;font-size:13px;font-weight:600;transition:transform .2s}
-.dashboard-cta:hover{transform:translateY(-2px)}
-.dashboard-cta span{font-size:18px}
-@media(max-width:900px){.dashboard-hero{min-height:auto;padding:70px 8vw 78px}.dashboard-hero .compass-mini{width:105px;height:105px;right:22px;top:20px}.dashboard-hero .compass-mini .needle{height:72px}.dashboard-card{margin-top:35px}}
-@media(max-width:560px){.dashboard-hero{padding:62px 20px 68px}.dashboard-hero .compass-mini{width:82px;height:82px;right:12px;top:12px}.dashboard-hero .compass-mini .needle{height:58px}.dashboard-card{padding:27px 21px 24px;box-shadow:10px 10px 0 rgba(220,232,108,.95)}.dashboard-topline{align-items:flex-start;flex-direction:column;gap:8px}.dashboard-features{grid-template-columns:1fr}.dashboard-features>div{min-height:76px}}

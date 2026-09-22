@@ -37,6 +37,28 @@
     .office-phone:hover{color:#E66B4F}
     @media(max-width:760px){.office-section{padding:52px 22px}.office-head{display:block}.office-head>p{margin-top:14px}.office-grid{grid-template-columns:1fr}.office-card{padding:25px}}
   </style>
+
+<style id="dashboard-hero-fix">
+/* Self-contained dashboard hero styles so this feature renders even if an older stylesheet is cached. */
+.hero-art.dashboard-hero{position:relative;display:flex!important;align-items:center!important;justify-content:center!important;min-height:620px!important;padding:52px 42px!important;background:#173c35!important;overflow:hidden!important;isolation:isolate}
+.hero-art.dashboard-hero:before{z-index:-3}
+.dashboard-hero .orbit{z-index:-2!important}
+.dashboard-compass{width:160px!important;height:160px!important;left:auto!important;right:-42px!important;top:auto!important;bottom:-36px!important;transform:none!important;opacity:.38!important;z-index:-1!important}
+.dashboard-compass .needle{height:112px!important;width:6px!important}.dashboard-compass .north{font-size:9px!important;top:6px!important}
+.dashboard-panel{position:relative!important;z-index:5!important;width:min(535px,100%)!important;background:#fbf8f1!important;color:#173c35!important;padding:31px 32px 30px!important;border-radius:4px!important;box-shadow:14px 14px 0 #dce86c!important}
+.dashboard-panel-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;margin:0 0 17px!important}
+.dashboard-label{font-family:'DM Sans',sans-serif!important;font-size:10px!important;font-weight:700!important;letter-spacing:.15em!important;color:#173c35!important}
+.dashboard-free{font-family:'DM Sans',sans-serif!important;font-size:11px!important;font-weight:800!important;letter-spacing:.06em!important;background:#dce86c!important;color:#173c35!important;padding:7px 11px!important;border-radius:20px!important;white-space:nowrap!important}
+.dashboard-panel h2{font-family:'Fraunces',serif!important;font-size:clamp(34px,3.3vw,51px)!important;line-height:1.02!important;letter-spacing:-.04em!important;font-weight:500!important;color:#173c35!important;margin:0 0 14px!important}
+.dashboard-panel h2 em{color:#e66b4f!important;font-style:italic!important}
+.dashboard-condition{font-family:'DM Sans',sans-serif!important;font-size:11px!important;line-height:1.5!important;color:#536862!important;margin:0 0 19px!important;padding:9px 11px!important;background:#f5f0e6!important;border-left:3px solid #e66b4f!important}
+.dashboard-grid{display:grid!important;grid-template-columns:1fr 1fr!important;border-top:1px solid rgba(23,60,53,.18)!important;border-left:1px solid rgba(23,60,53,.18)!important;margin:0 0 21px!important}
+.dashboard-grid>div{display:grid!important;grid-template-columns:25px 1fr!important;align-items:start!important;gap:2px!important;min-height:67px!important;padding:12px!important;border-right:1px solid rgba(23,60,53,.18)!important;border-bottom:1px solid rgba(23,60,53,.18)!important;background:#fbf8f1!important}
+.dashboard-grid b{font-family:'DM Sans',sans-serif!important;font-size:9px!important;color:#e66b4f!important;font-weight:700!important}.dashboard-grid strong{font-family:'DM Sans',sans-serif!important;font-size:11px!important;line-height:1.35!important;color:#173c35!important;font-weight:600!important}
+.dashboard-button{display:flex!important;align-items:center!important;justify-content:space-between!important;width:100%!important;background:#e66b4f!important;color:#fff!important;padding:15px 17px!important;font-family:'DM Sans',sans-serif!important;font-size:13px!important;font-weight:700!important;text-decoration:none!important;cursor:pointer!important;position:relative!important;z-index:10!important}.dashboard-button:hover{transform:translateY(-2px)!important}.dashboard-button span{font-size:18px!important}
+@media(max-width:900px){.hero-art.dashboard-hero{min-height:auto!important;padding:60px 8vw 70px!important}.dashboard-panel{width:min(600px,100%)!important}.dashboard-compass{width:125px!important;height:125px!important;right:-25px!important;bottom:-25px!important}.dashboard-compass .needle{height:86px!important}}
+@media(max-width:560px){.hero-art.dashboard-hero{padding:48px 20px 58px!important}.dashboard-panel{padding:25px 20px 23px!important;box-shadow:9px 9px 0 #dce86c!important}.dashboard-panel-head{align-items:flex-start!important;flex-direction:column!important;gap:8px!important}.dashboard-grid{grid-template-columns:1fr!important}.dashboard-grid>div{min-height:55px!important}.dashboard-panel h2{font-size:36px!important}}
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -59,19 +81,21 @@
       </div>
       <div class="hero-art dashboard-hero reveal">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="compass compass-mini"><span class="north">N</span><div class="needle"></div></div>
-        <article class="dashboard-card">
-          <div class="dashboard-topline"><span class="dashboard-kicker">Your personal student space</span><span class="free-badge">100% FREE</span></div>
-          <h2>Create your<br><em>Student Dashboard</em></h2>
-          <p class="free-condition">Available after completing the basic screening assessment — the first step in understanding the student.</p>
-          <p class="dashboard-intro">One place to explore possibilities, save choices and keep discovering what can strengthen your path.</p>
-          <div class="dashboard-features">
-            <div><span>01</span><strong>Career avenues</strong><small>Explore paths that fit your profile.</small></div>
-            <div><span>02</span><strong>Colleges &amp; universities</strong><small>Explore and keep selected options together.</small></div>
-            <div><span>03</span><strong>Career Boosters</strong><small>Discover resources that build your readiness.</small></div>
-            <div><span>04</span><strong>Libraries &amp; resources</strong><small>Keep learning beyond the assessment.</small></div>
+        <div class="compass dashboard-compass"><span class="north">N</span><div class="needle"></div></div>
+        <article class="dashboard-panel" aria-label="Free Student Dashboard">
+          <div class="dashboard-panel-head">
+            <span class="dashboard-label">STUDENT DASHBOARD</span>
+            <span class="dashboard-free">100% FREE</span>
           </div>
-          <a class="dashboard-cta" href="https://careertest.edumilestones.com/student-dashboard/?channel_id=NTI1OA==" target="_blank" rel="noreferrer">Create my Student Dashboard <span>↗</span></a>
+          <h2>Your space to<br><em>explore what’s next.</em></h2>
+          <p class="dashboard-condition">Available after you take the basic screening assessment test — an essential first step to understand the student.</p>
+          <div class="dashboard-grid">
+            <div><b>01</b><strong>Explore career avenues</strong></div>
+            <div><b>02</b><strong>Explore colleges &amp; universities</strong></div>
+            <div><b>03</b><strong>Save selected colleges</strong></div>
+            <div><b>04</b><strong>Career Boosters &amp; Libraries</strong></div>
+          </div>
+          <a class="dashboard-button" href="https://careertest.edumilestones.com/student-dashboard/?channel_id=NTI1OA==" target="_blank" rel="noopener noreferrer">Create your FREE Student Dashboard <span>↗</span></a>
         </article>
       </div>
     </section>
