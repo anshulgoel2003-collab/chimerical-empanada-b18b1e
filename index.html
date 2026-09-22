@@ -36,20 +36,6 @@
     .office-phone{display:inline-flex;align-items:center;gap:8px;color:#173C35;font-weight:600;text-decoration:none;border-bottom:1px solid #E66B4F;padding-bottom:3px}
     .office-phone:hover{color:#E66B4F}
     @media(max-width:760px){.office-section{padding:52px 22px}.office-head{display:block}.office-head>p{margin-top:14px}.office-grid{grid-template-columns:1fr}.office-card{padding:25px}}
-
-    /* Free Student Dashboard — homepage hero promotion */
-    .dashboard-promo{margin:24px 0 22px;padding:22px 24px;border-radius:20px;background:#173C35;color:#FBF8F1;box-shadow:0 18px 45px rgba(23,60,53,.16);position:relative;overflow:hidden}
-    .dashboard-promo:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-62px;top:-72px;background:#DCE86C;opacity:.95}
-    .dashboard-promo-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;position:relative;z-index:1}
-    .dashboard-free{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:#DCE86C;color:#173C35;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
-    .dashboard-promo h2{margin:0 0 8px;font-family:"Fraunces",serif;font-size:clamp(1.55rem,2.8vw,2.25rem);line-height:1.08;color:#FBF8F1;position:relative;z-index:1}
-    .dashboard-promo>p{margin:0 0 15px;max-width:690px;color:#E9EEE9;line-height:1.55;position:relative;z-index:1}
-    .dashboard-highlights{display:flex;flex-wrap:wrap;gap:8px 10px;margin:0 0 17px;padding:0;list-style:none;position:relative;z-index:1}
-    .dashboard-highlights li{padding:7px 10px;border:1px solid rgba(251,248,241,.20);border-radius:10px;background:rgba(251,248,241,.07);font-size:.82rem}
-    .dashboard-cta{display:inline-flex;align-items:center;gap:8px;padding:12px 17px;border-radius:999px;background:#E66B4F;color:#fff;text-decoration:none;font-weight:700;position:relative;z-index:1}
-    .dashboard-cta:hover{filter:brightness(.96);transform:translateY(-1px)}
-    .hero-art .compass{scale:.55}
-    @media(max-width:760px){.dashboard-promo{padding:19px 18px}.dashboard-highlights{display:grid;grid-template-columns:1fr 1fr}.dashboard-highlights li{font-size:.76rem}.hero-art .compass{scale:.55}}
   </style>
 </head>
 <body>
@@ -68,26 +54,25 @@
         <p class="eyebrow"><span></span> Career decisions, made human</p>
         <h1>Your future isn’t a <em>multiple-choice</em> question.</h1>
         <p class="hero-intro">Discover the paths that fit how you think, what excites you and where you want to go—with evidence-led assessments and one-to-one guidance.</p>
-        <aside class="dashboard-promo" aria-label="Free student dashboard">
-          <div class="dashboard-promo-top"><span class="dashboard-free">100% FREE</span></div>
-          <h2>Create your FREE Student Dashboard</h2>
-          <p>Your personal space to explore possibilities before making big education and career decisions.</p>
-          <ul class="dashboard-highlights">
-            <li>Explore career avenues</li>
-            <li>Explore colleges &amp; universities</li>
-            <li>Keep selected colleges &amp; universities together</li>
-            <li>Explore Career Boosters &amp; Libraries</li>
-          </ul>
-          <a class="dashboard-cta" href="https://careertest.edumilestones.com/student-dashboard/?channel_id=NTI1OA==" target="_blank" rel="noreferrer">Create my FREE dashboard <span>↗</span></a>
-        </aside>
         <div class="hero-actions"><a class="button primary" href="https://eddice.edumilestones.com/" target="_blank" rel="noreferrer">Explore your options <span>↗</span></a><a class="button outline" href="https://eddice.edumilestones.com/login/global-admissions/" target="_blank" rel="noreferrer">Explore colleges &amp; admissions <span>↗</span></a><a class="text-link" href="#journey">See how it works <span>↓</span></a></div>
         <div class="audience"><span>Built for</span><a href="https://eddice.edumilestones.com/" target="_blank" rel="noreferrer">Class 8–12</a><a href="https://eddice.edumilestones.com/" target="_blank" rel="noreferrer">Any competitive exam / stream</a><a href="https://eddice.edumilestones.com/" target="_blank" rel="noreferrer">College students</a></div>
       </div>
-      <div class="hero-art reveal">
+      <div class="hero-art dashboard-hero reveal">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="compass"><span class="north">N</span><div class="needle"></div><span class="caption">YOUR DIRECTION</span></div>
-        <div class="note note-one">Strengths<br><strong>made visible</strong></div>
-        <div class="note note-two"><span>01</span> Understand<br><span>02</span> Explore<br><span>03</span> Decide</div>
+        <div class="compass compass-mini"><span class="north">N</span><div class="needle"></div></div>
+        <article class="dashboard-card">
+          <div class="dashboard-topline"><span class="dashboard-kicker">Your personal student space</span><span class="free-badge">100% FREE</span></div>
+          <h2>Create your<br><em>Student Dashboard</em></h2>
+          <p class="free-condition">Available after completing the basic screening assessment — the first step in understanding the student.</p>
+          <p class="dashboard-intro">One place to explore possibilities, save choices and keep discovering what can strengthen your path.</p>
+          <div class="dashboard-features">
+            <div><span>01</span><strong>Career avenues</strong><small>Explore paths that fit your profile.</small></div>
+            <div><span>02</span><strong>Colleges &amp; universities</strong><small>Explore and keep selected options together.</small></div>
+            <div><span>03</span><strong>Career Boosters</strong><small>Discover resources that build your readiness.</small></div>
+            <div><span>04</span><strong>Libraries &amp; resources</strong><small>Keep learning beyond the assessment.</small></div>
+          </div>
+          <a class="dashboard-cta" href="https://careertest.edumilestones.com/student-dashboard/?channel_id=NTI1OA==" target="_blank" rel="noreferrer">Create my Student Dashboard <span>↗</span></a>
+        </article>
       </div>
     </section>
 
